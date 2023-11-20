@@ -39,14 +39,13 @@ CMD ["python", "app.py"]
    - Переименуйте свой образ для Docker Hub: `docker tag hello-world-app [ваше имя пользователя на Docker Hub]/hello-world-app`
    - Отправьте образ в Docker Hub: `docker push [ваше имя пользователя на Docker Hub]/hello-world-app`
 
-
 ### 4. Установка Minikube
 
 **Шаги:**
 
 1. Перейдите на официальную страницу Minikube: [Minikube Installation](https://minikube.sigs.k8s.io/docs/start/).
 2. Следуйте инструкциям для установки Minikube на вашу операционную систему.
-3. После установки запустите Minikube с помощью команды: `minikube start`.
+3. После установки запустите Minikube с помощью команды: `minikube start`.(в моем случае используется docker driver)
 
 ### 5. Запуск Deployment с 2 репликами
 
@@ -70,6 +69,10 @@ minikube service hello-world-service
 
 ![Alt text](./assets/image.png)
 
-**Запущенное приложение** 
+**Запущенное приложение**
 
 ![Alt text](./assets/image-1.png)
+
+**Схема работы nodePort**
+
+![Alt text](./assets/schema.png)

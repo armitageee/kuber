@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: hello-world-service
 spec:
-  type: NodePort # Или другой тип по вашему выбору
+  type: NodePort
   selector:
     app: hello-world
   ports:
     - protocol: TCP
       port: 32777
       targetPort: 32777
-      nodePort: 30000 # Пример порта, может быть любым в диапазоне 30000-32767
+      nodePort: 30000

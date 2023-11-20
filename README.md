@@ -68,8 +68,8 @@ minikube service hello-world-service
 
 Эта команда автоматически откроет веб-браузер с нашим приложением.
 
-![Alt text](image.png)
+![Alt text](./assets/image.png)
 
 **Запущенное приложение** 
 
-![Alt text](image-1.png)
+![Alt text](./assets/image-1.png)
